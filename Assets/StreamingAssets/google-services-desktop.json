@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1087501585726",
+    "firebase_url": "https://demogame-b11a4-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "demogame-b11a4",
+    "storage_bucket": "demogame-b11a4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087501585726:android:a2e8743a1be93fb23df06f",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.DemoGame"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0zRSpOYCVqKyOERs-XMwgEO5jFqZ0SKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

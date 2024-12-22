@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: MainST_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 0ad6374427de4804a9d87c41e5e4b905, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 203359383552
+    m_Localized: title of the game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 985991727411200
+    m_Localized: Account login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3611024517885952
+    m_Localized: login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6792008730013696
+    m_Localized: PlayerInfo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6790441670930432
+    m_Localized: language switch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6792865542434816
+    m_Localized: English
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6787533617360896
+    m_Localized: Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229350120910848
+    m_Localized: Google login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229580832796672
+    m_Localized: Line login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7229790111789056
+    m_Localized: Account login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7230704969183232
+    m_Localized: 'account number:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7231032468828160
+    m_Localized: Please enter account number
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7231234093215744
+    m_Localized: Please enter password
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7231374484959232
+    m_Localized: 'password:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7231769156382720
+    m_Localized: Sign out
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7232529097158656
+    m_Localized: register
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7232961685090304
+    m_Localized: Guest login
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9364120745406464
+    m_Localized: energy
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

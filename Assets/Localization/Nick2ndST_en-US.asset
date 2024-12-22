@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Nick2ndST_en-US
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en-US
+  m_SharedData: {fileID: 11400000, guid: 8c0158b9c83ff574b8288f9ccd5d40e6, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 935953297408
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 935991046144
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 935991046145
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 935991046146
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 935991046147
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 935991046148
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 935991046149
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 935991046150
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 935991046151
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  - m_Id: 935991046152
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
