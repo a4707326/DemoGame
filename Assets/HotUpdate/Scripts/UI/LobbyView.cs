@@ -32,16 +32,7 @@ public class LobbyView : MonoBehaviour
 
     private void Awake()
     {
-        //_avatar_Img = transform.Find<Image>("Avatar_Img");
-
-        //_name_txt = transform.Find<Text>("Name/Name_Txt");
-        //_money_txt = transform.Find<Text>("Money/Money_Txt");
-
-        //_enterGame1_Btn = transform.Find<Button>("EnterGame1_Btn");
-        //_enterGame2_Btn = transform.Find<Button>("EnterGame2_Btn");
-        //_enterGame3_Btn = transform.Find<Button>("EnterGame3_Btn");
         Init();
-
     }
     private void Start() 
     {
@@ -64,7 +55,7 @@ public class LobbyView : MonoBehaviour
         diamonds_txt.text = date.PlayerData.Diamonds.ToString();
         esnergy_txt.text = date.PlayerData.Energy.ToString();
 
-        //TimersMgr.SetTimer(this, 5f, () => { Debug.Log("123456789"); });
+    
 
     }
 

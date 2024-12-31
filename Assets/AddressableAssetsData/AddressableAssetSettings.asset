@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: 460039c3276b76d4da21328b96f4374e
   m_currentHash:
     serializedVersion: 2
-    Hash: a344e0046ddd1086030052abad25580e
+    Hash: 00000000000000000000000000000000
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 1
   m_CatalogRequestsTimeout: 0
@@ -63,17 +63,33 @@ MonoBehaviour:
   - {fileID: 11400000, guid: b19283ce76fd1824aa3dbd1717ffa6ff, type: 2}
   - {fileID: 11400000, guid: d346c1a07c831bc48875155d4baf5165, type: 2}
   - {fileID: 11400000, guid: 5e1674190dea6bd4d816dcbf9a5b1324, type: 2}
+  - {fileID: 11400000, guid: a86b83318b91e1d4cbc32c95b544963f, type: 2}
   - {fileID: 11400000, guid: 0369d4be399fa8b4fa4bc452a2efb535, type: 2}
   - {fileID: 11400000, guid: 56202a1cba5ca2d42b37a800a9db50e3, type: 2}
   - {fileID: 11400000, guid: 2087408a39f9ff24bb510f1971d5d1a6, type: 2}
   - {fileID: 11400000, guid: 304cfdad6bc357b488dafa40cd7c588c, type: 2}
   - {fileID: 11400000, guid: c43ae3e757dc78f43a466f9cfc9c07aa, type: 2}
   - {fileID: 11400000, guid: 4c45a01102876424a9ff3e304beccfa3, type: 2}
+  - {fileID: 11400000, guid: 3a6fe56a0f4854642aebe0c280f39f22, type: 2}
   m_BuildSettings:
     m_LogResourceManagerExceptions: 1
     m_BundleBuildPath: Temp/com.unity.addressables/AssetBundles
   m_ProfileSettings:
     m_Profiles:
+    - m_InheritedParent: 
+      m_Id: 56fb2a0b34c67fc41ad8e9f8e17f3fd3
+      m_ProfileName: DemoGameHotUpdate2
+      m_Values:
+      - m_Id: 4ca9eaa35a404104092de11ad723c55f
+        m_Value: 'ServerData/[BuildTarget]'
+      - m_Id: 60cdc0ee836fe27478397a05ee9fe2c8
+        m_Value: 'https://a4707326.github.io/DemoGameHotUpdate2/[BuildTarget]'
+      - m_Id: 62bb57d22422ca54489f15f15977a486
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 77ce299af690d594e94bafe6d88f21d4
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: de81230d34f311440a77a6dbc1da5861
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
     - m_InheritedParent: 
       m_Id: 58a4933db2951c443b8820e9ef8d60fd
       m_ProfileName: New Profile
@@ -141,4 +157,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dd038cda111eaa742875c9d949455c74, type: 2}
   - {fileID: 11400000, guid: 6e6be373c00fdf149a06ea15edd3b4a0, type: 2}
   - {fileID: 11400000, guid: 665903c9b9307fc4f9fc3fafb63b168e, type: 2}
-  m_ActiveProfileId: 58a4933db2951c443b8820e9ef8d60fd
+  m_ActiveProfileId: 56fb2a0b34c67fc41ad8e9f8e17f3fd3

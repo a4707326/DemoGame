@@ -19,6 +19,7 @@ public static class AddressablesKeys
     }
     public static class DefaultLocalGroupKeys
     {
+        public const string Symbol_prefab = "Assets/HotUpdate/Game2/Prefabs/Symbol.prefab";
         public const string Music01_wav = "Assets/HotUpdate/Audios/Music01.wav";
     }
     public static class CharactersKeys
@@ -64,6 +65,7 @@ public static class AddressablesKeys
     public static class SceneKeys
     {
         public const string Game1View_unity = "Assets/HotUpdate/Scenes/Game1View.unity";
+        public const string Game2View_unity = "Assets/HotUpdate/Scenes/Game2View.unity";
         public const string Lobby_unity = "Assets/HotUpdate/Scenes/Lobby.unity";
         public const string Login_unity = "Assets/HotUpdate/Scenes/Login.unity";
         public const string SampleScene_unity = "Assets/HotUpdate/Scenes/SampleScene.unity";
@@ -84,6 +86,7 @@ public static class AddressablesKeys
         public const string Avatar_prefab = "Assets/HotUpdate/Prefabs/UI/Elements/Avatar.prefab";
         public const string Canvas_prefab = "Assets/HotUpdate/Prefabs/UI/Elements/Canvas.prefab";
         public const string EventSystem_prefab = "Assets/HotUpdate/Prefabs/UI/Elements/EventSystem.prefab";
+        public const string GameSetting_Btn_prefab = "Assets/HotUpdate/Prefabs/UI/Elements/GameSetting_Btn.prefab";
         public const string InputField_IF_prefab = "Assets/HotUpdate/Prefabs/UI/Elements/InputField_IF.prefab";
         public const string Main_Camera_prefab = "Assets/HotUpdate/Prefabs/UI/Elements/Main Camera.prefab";
         public const string Mask_prefab = "Assets/HotUpdate/Prefabs/UI/Elements/Mask.prefab";
@@ -98,5 +101,9 @@ public static class AddressablesKeys
         public const string PlayerInfoPopupView_prefab = "Assets/HotUpdate/Prefabs/UI/PopupViews/PlayerInfoPopupView.prefab";
         public const string PopupView_prefab = "Assets/HotUpdate/Prefabs/UI/PopupViews/PopupView.prefab";
         public const string SettingPopupView_prefab = "Assets/HotUpdate/Prefabs/UI/PopupViews/SettingPopupView.prefab";
+    }
+    public static class Game1Keys
+    {
+        public const string Option_Btn_prefab = "Assets/HotUpdate/Game1/Prefabs/Option_Btn.prefab";
     }
 }

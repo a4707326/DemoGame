@@ -15,6 +15,17 @@ public static class UnityExtern
         return parent.transform.Find(path).GetComponent<T>();
     }
 
+    //public static RectTransform GetRectTransform(this GameObject gameObject)
+    //{
+    //    return gameObject.GetComponent<RectTransform>();
+    //}
+
+    public static RectTransform GetRectTransform(this Component component)
+    {
+        return component.gameObject.GetComponent<RectTransform>();
+    }
+
+
     //在 async/await 中使用 UnityWebRequest
     public static Task<UnityWebRequest> SendWebRequestAsync(this UnityWebRequest webRequest)
     {
