@@ -15,11 +15,6 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 460039c3276b76d4da21328b96f4374e
   m_SerializeEntries:
-  - m_GUID: 1b60b44996d51db49abcd5af07f59710
-    m_Address: Assets/HotUpdate/Game2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f8f458204f8a9b8448d22fc23df05635
     m_Address: Assets/HotUpdate/Audios
     m_ReadOnly: 0

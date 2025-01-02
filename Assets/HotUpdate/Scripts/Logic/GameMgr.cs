@@ -28,7 +28,9 @@ public class GameMgr : Singleton<GameMgr>
         HotUpdateMgr.Instance.Init();
         TimersMgr.Instance.Init();
         LocalDataMgr.Instance.Init();
-        FirebaseMgr.Instance.Init();
+        await FirebaseMgr.Instance.Init();
+        GooglePlayGamesMgr.Instance.Init();
+        LoginMgr.Instance.Init();//依賴FirebaseMgr 跟GooglePlayGamesMgr
         SceneMgr.Instance.Init();
         PopupMgr.Instance.Init();
         await AudioMgr.Instance.Init();

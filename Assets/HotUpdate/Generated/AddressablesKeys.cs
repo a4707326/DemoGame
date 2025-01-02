@@ -19,8 +19,11 @@ public static class AddressablesKeys
     }
     public static class DefaultLocalGroupKeys
     {
-        public const string Symbol_prefab = "Assets/HotUpdate/Game2/Prefabs/Symbol.prefab";
         public const string Music01_wav = "Assets/HotUpdate/Audios/Music01.wav";
+    }
+    public static class Game2Keys
+    {
+        public const string Symbol_prefab = "Assets/HotUpdate/Game2/Prefabs/Symbol.prefab";
     }
     public static class CharactersKeys
     {

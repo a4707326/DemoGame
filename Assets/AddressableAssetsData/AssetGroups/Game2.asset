@@ -14,7 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GroupName: Game2
   m_GUID: 4c3bdf74bc7818743ba79f3189bfc493
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 1b60b44996d51db49abcd5af07f59710
+    m_Address: Assets/HotUpdate/Game2
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - All
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f16d4913f40012d4fb57577f4f789970, type: 2}
   m_SchemaSet:

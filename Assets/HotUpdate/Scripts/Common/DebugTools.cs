@@ -1,5 +1,4 @@
 ﻿
-using log4net.Core;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;

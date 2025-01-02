@@ -17,6 +17,11 @@ public class EasyEditor : Editor
     {
         EditorSceneManager.OpenScene(Application.dataPath + "/LocalDate/Scenes/Entry.unity");
     }
+    [MenuItem("Custom/GoToLogin")]
+    public static void GoToLogin()
+    {
+        EditorSceneManager.OpenScene(Application.dataPath + "/HotUpdate/Scenes/Login.unity");
+    }
 
     [MenuItem("Custom/GoToLobby")]
     public static void GoToLobby()

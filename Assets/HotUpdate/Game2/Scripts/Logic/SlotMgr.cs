@@ -6,7 +6,6 @@ using Timers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static PlasticGui.Help.GuiHelp;
 
 
 public class SlotMgr : MonoSingleSingleton<SlotMgr>

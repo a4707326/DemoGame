@@ -25,10 +25,15 @@ public class AddressablesVersionIncrementor
         // 3. 更新版本號與哈希值
         await UpdateVersionFile();
 
+        // 4. 移動Dll
+        SimpleHybridCLRDLLTool.MoveDLL();
+
+        //5. 清空 Addressables 的構建
+        AddressableAssetSettings.CleanPlayerContent();
 
         // //4. 執行 Addressables 的構建
         //AddressableAssetSettings.BuildPlayerContent();
-        
+
 
     }
 

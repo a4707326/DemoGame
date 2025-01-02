@@ -41,75 +41,13 @@ public class AccountLoginPopupView : PopupView, IPopup
     private void OnLoginClick()
     {
         Debug.Log("OnLoginClick");
-
-        FirebaseMgr.Instance.LoginWithEmail(account_IF.text, password_IF.text,
-            onSuccess: (user) =>
-            {
-                // 從Firebase讀取
-                FirebaseMgr.Instance.ReadJsonData(
-                    path: $"{Consts.FirebaseKey.Players}{user.UserId}",
-                    onSuccess: async (jsonData) =>
-                    {
-                        LocalDataMgr.Instance.PlayerData.FromJson(jsonData);
-                        LocalDataMgr.Instance.PlayerData.Show();
-                        Debug.Log($"讀取成功，玩家暱稱：{LocalDataMgr.Instance.PlayerData.Nickname}");
-                        await SceneMgr.Instance.LoadScene(Consts.SceneKey.LobbyScene);
-
-                    }
-                );
-            },
-            onError: (error) =>
-            { 
-            }
-        );
-
-
-  
-
+        LoginMgr.Instance.AccountLogin(account_IF.text, password_IF.text);
     }
 
     private void OnRegisterClick()
     {
         Debug.Log("OnRegisterClick");
-
-
-        FirebaseMgr.Instance.RegisterWithEmail
-        (
-            account_IF.text,
-            password_IF.text,
-            onSuccess: (user) =>
-            {
-                PlayerData playerData = new PlayerData
-                {
-                    UserId = user.UserId,
-                    Nickname = Tools.GenRandomNickname(),
-                    Account = account_IF.text,
-                    Password = password_IF.text,
-                };
-
-                // 寫入到 Firebase
-                FirebaseMgr.Instance.UpdateJsonData(
-                    path: $"{Consts.FirebaseKey.Players}{playerData.UserId}", // 路徑：Players/123456
-                    jsonData: playerData.ToJson(),
-                    onSuccess: () => 
-                    {
-                        Debug.Log("資料寫入成功！");
-                        // 從Firebase讀取
-                        FirebaseMgr.Instance.ReadJsonData(
-                            path: $"Players/{playerData.UserId}",
-                            onSuccess: async (jsonData) =>
-                            {
-                                LocalDataMgr.Instance.PlayerData.FromJson(jsonData);
-                                LocalDataMgr.Instance.PlayerData.Show();
-                                Debug.Log($"讀取成功，玩家暱稱：{LocalDataMgr.Instance.PlayerData.Nickname}");
-                                await SceneMgr.Instance.LoadScene(Consts.SceneKey.LobbyScene);
-
-                            }
-                        );
-                    }
-                );
-            }
-        );
+        LoginMgr.Instance.AccountRegister(account_IF.text, password_IF.text);
     }
 
     internal override void OnDestroy()

@@ -5,8 +5,9 @@ using Firebase.Auth;
 using System.Collections.Generic;
 using UnityEngine.Events;
 using Firebase.Database;
-using Google.MiniJSON;
 using Newtonsoft.Json;
+using System.Threading.Tasks;
+using System.Runtime.Remoting;
 
 public class FirebaseMgr : Singleton<FirebaseMgr>
 {
@@ -15,27 +16,38 @@ public class FirebaseMgr : Singleton<FirebaseMgr>
     private Firebase.Auth.FirebaseUser user;
     private DatabaseReference databaseRef;
 
-    internal void Init()
+    //初始化Firebase
+    public async Task Init()
     {
-        //初始化Firebase
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
+        try
         {
-            if (task.Result == DependencyStatus.Available)
+            // 檢查並修復 Firebase 依賴
+            var dependencyStatus = await FirebaseApp.CheckAndFixDependenciesAsync();
+
+            if (dependencyStatus == DependencyStatus.Available)
             {
+                // 初始化 FirebaseAuth
                 auth = FirebaseAuth.DefaultInstance;
                 auth.StateChanged += AuthStateChanged;
-                databaseRef = FirebaseDatabase.DefaultInstance.RootReference; 
+
+                // 初始化 Firebase Database
+                databaseRef = FirebaseDatabase.DefaultInstance.RootReference;
 
                 Debug.Log("Firebase Initialized");
             }
             else
             {
-                Debug.LogError("Could not resolve all Firebase dependencies: " + task.Result);
+                Debug.LogError($"Could not resolve all Firebase dependencies: {dependencyStatus}");
             }
-        });
+        }
+        catch (Exception ex)
+        {
+            // 捕獲和處理異常
+            Debug.LogError($"Firebase initialization failed: {ex.Message}");
+        }
     }
 
-
+ 
     /// <summary>
     /// 自動登入
     /// </summary>
@@ -383,6 +395,7 @@ public class FirebaseMgr : Singleton<FirebaseMgr>
             {
                 if (task.IsCompletedSuccessfully)
                 {
+                    Debug.Log("資料寫入成功！");
                     onSuccess?.Invoke();
                 }
                 else
@@ -400,4 +413,27 @@ public class FirebaseMgr : Singleton<FirebaseMgr>
     }
 
 
-}
+    public Firebase.Auth.FirebaseAuth GetAuth() 
+    {
+        return auth;
+    }
+
+    public async Task<bool> IsUserExistsAsync(string userId)
+    {
+        DataSnapshot snapshot = await databaseRef.Child(Consts.FirebaseKey.Players).Child(userId).GetValueAsync();
+
+        if (snapshot.Exists)
+        {
+            Debug.Log($"用戶存在：{snapshot.Child("name").Value}");
+            return true;
+        }
+        else
+        {
+            Debug.Log("用戶不存在！");
+            return false;
+        }
+    }
+
+
+
+}//另外我已經有FirebaseMgr了應該不需要再初始化一次Firebase吧?

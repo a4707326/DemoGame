@@ -18,7 +18,8 @@ MonoBehaviour:
   - m_GUID: c8843e88d76b654418f0c3a265874a8d
     m_Address: Assets/HotUpdate/Game1
     m_ReadOnly: 0
-    m_SerializedLabels: []
+    m_SerializedLabels:
+    - All
     FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: f16d4913f40012d4fb57577f4f789970, type: 2}

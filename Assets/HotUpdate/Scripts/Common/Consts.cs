@@ -27,7 +27,7 @@ public class Consts
 
     public static class FirebaseKey
     {
-        public const string Players = "Players/";
+        public const string Players = "Players";
     }
 
 

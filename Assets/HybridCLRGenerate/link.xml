@@ -46,14 +46,20 @@
   </assembly>
   <assembly fullname="Firebase.Auth">
     <type fullname="Firebase.Auth.AuthResult" preserve="all" />
+    <type fullname="Firebase.Auth.Credential" preserve="all" />
     <type fullname="Firebase.Auth.FirebaseAuth" preserve="all" />
     <type fullname="Firebase.Auth.FirebaseUser" preserve="all" />
+    <type fullname="Firebase.Auth.GoogleAuthProvider" preserve="all" />
   </assembly>
   <assembly fullname="Firebase.Database">
     <type fullname="Firebase.Database.DataSnapshot" preserve="all" />
     <type fullname="Firebase.Database.DatabaseReference" preserve="all" />
     <type fullname="Firebase.Database.FirebaseDatabase" preserve="all" />
     <type fullname="Firebase.Database.Query" preserve="all" />
+  </assembly>
+  <assembly fullname="Google.Play.Games">
+    <type fullname="GooglePlayGames.BasicApi.SignInStatus" preserve="all" />
+    <type fullname="GooglePlayGames.PlayGamesPlatform" preserve="all" />
   </assembly>
   <assembly fullname="Newtonsoft.Json">
     <type fullname="Newtonsoft.Json.JsonConvert" preserve="all" />
@@ -135,6 +141,7 @@
     <type fullname="UnityEngine.Rect" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.Renderer" preserve="all" />
+    <type fullname="UnityEngine.RuntimePlatform" preserve="all" />
     <type fullname="UnityEngine.SceneManagement.LoadSceneMode" preserve="all" />
     <type fullname="UnityEngine.SceneManagement.Scene" preserve="all" />
     <type fullname="UnityEngine.Screen" preserve="all" />
@@ -225,6 +232,8 @@
     <type fullname="System.Diagnostics.DebuggableAttribute" preserve="all" />
     <type fullname="System.Diagnostics.DebuggableAttribute/DebuggingModes" preserve="all" />
     <type fullname="System.Diagnostics.DebuggerHiddenAttribute" preserve="all" />
+    <type fullname="System.Diagnostics.StackFrame" preserve="all" />
+    <type fullname="System.Diagnostics.StackTrace" preserve="all" />
     <type fullname="System.Enum" preserve="all" />
     <type fullname="System.Environment" preserve="all" />
     <type fullname="System.EventArgs" preserve="all" />
@@ -241,11 +250,13 @@
     <type fullname="System.NotSupportedException" preserve="all" />
     <type fullname="System.Nullable`1" preserve="all" />
     <type fullname="System.Object" preserve="all" />
+    <type fullname="System.ParamArrayAttribute" preserve="all" />
     <type fullname="System.Random" preserve="all" />
     <type fullname="System.Reflection.Assembly" preserve="all" />
     <type fullname="System.Reflection.BindingFlags" preserve="all" />
     <type fullname="System.Reflection.FieldInfo" preserve="all" />
     <type fullname="System.Reflection.MemberInfo" preserve="all" />
+    <type fullname="System.Reflection.MethodBase" preserve="all" />
     <type fullname="System.Reflection.MethodInfo" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncStateMachineAttribute" preserve="all" />
     <type fullname="System.Runtime.CompilerServices.AsyncTaskMethodBuilder" preserve="all" />

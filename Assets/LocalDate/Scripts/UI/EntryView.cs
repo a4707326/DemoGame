@@ -11,13 +11,11 @@ public class EntryView : MonoBehaviour
     void Start()
     {
 
-        Caching.ClearCache(); // 清除所有緩存
-        Addressables.ClearResourceLocators();
-        Addressables.ClearDependencyCacheAsync("All");
-        Addressables.ClearDependencyCacheAsync("Scene");
-        Debug.Log("清除緩存完成！");
-
-        //本地資源管理器初始化
+        //Caching.ClearCache(); // 清除所有緩存
+        //Addressables.ClearResourceLocators();
+        //Addressables.ClearDependencyCacheAsync("All");
+        //Addressables.ClearDependencyCacheAsync("Scene");
+        //Debug.Log("清除緩存完成！");
 
         SceneManager.LoadScene("Loading");
     }
