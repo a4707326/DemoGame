@@ -26,6 +26,12 @@
 
 /.utmp/*
 
+#Privacy Protecion
+/Assets/google-services.json
+/Assets/google-services.json.meta
+/DemoGame.keystore
+
+
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/
