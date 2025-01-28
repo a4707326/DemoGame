@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+//Proto 文件的邏輯命名空間。
+package DemoGameService;
+
+// /proto: 目標 Go 文件的路徑，相對於當前的 GOPATH 或 go.mod 的根目錄。
+// demoGameServer: 生成 Go 文件的包名，它會影響生成的 .pb.go 和 .pb_grpc.go 文件中 package 的名稱。
+option go_package = "/proto;DemoGameService";
+
+// // 定義服務
+// service  DemoGameServer {
+//   rpc SayHello (HelloRequest) returns (HelloResponse);
+// }
+
+// 定義消息
+message HelloRequest {
+  string name = 1; // 用戶名
+}
+
+message HelloResponse {
+  string message = 1; // 返回消息
+}
+
+// WebSocket 消息格式
+message ChatMessage {
+  string sender = 1;
+  string content = 2;
+}
+

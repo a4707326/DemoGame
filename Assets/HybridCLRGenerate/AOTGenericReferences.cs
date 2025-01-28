@@ -6,6 +6,8 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	public static readonly IReadOnlyList<string> PatchedAOTAssemblyList = new List<string>
 	{
 		"DOTween.dll",
+		"Google.Protobuf.dll",
+		"Grpc.Core.Api.dll",
 		"Newtonsoft.Json.dll",
 		"System.Core.dll",
 		"System.dll",
@@ -63,6 +65,15 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// DelegateList<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>
 	// DelegateList<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle>
 	// DelegateList<float>
+	// Google.Protobuf.IDeepCloneable<object>
+	// Google.Protobuf.IMessage<object>
+	// Google.Protobuf.MessageParser.<>c__DisplayClass2_0<object>
+	// Google.Protobuf.MessageParser<object>
+	// Grpc.Core.AsyncUnaryCall<object>
+	// Grpc.Core.ClientBase<object>
+	// Grpc.Core.Marshaller.<>c<object>
+	// Grpc.Core.Marshaller<object>
+	// Grpc.Core.Method<object,object>
 	// System.Action<DG.Tweening.Plugins.Options.PathOptions,object,UnityEngine.Quaternion,object>
 	// System.Action<System.Collections.Generic.KeyValuePair<int,object>>
 	// System.Action<System.ValueTuple<UnityEngine.Localization.LocaleIdentifier,object>>
@@ -289,10 +300,12 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Func<object,object,object>
 	// System.Func<object,object>
 	// System.Func<object>
+	// System.IEquatable<object>
 	// System.Linq.Enumerable.Iterator<System.Collections.Generic.KeyValuePair<int,object>>
 	// System.Linq.Enumerable.WhereArrayIterator<System.Collections.Generic.KeyValuePair<int,object>>
 	// System.Linq.Enumerable.WhereEnumerableIterator<System.Collections.Generic.KeyValuePair<int,object>>
 	// System.Linq.Enumerable.WhereListIterator<System.Collections.Generic.KeyValuePair<int,object>>
+	// System.Nullable<System.DateTime>
 	// System.Nullable<UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>>
 	// System.Nullable<UnityEngine.Vector3>
 	// System.Nullable<int>
@@ -335,6 +348,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 	// System.Span.Enumerator<ushort>
 	// System.Span<int>
 	// System.Span<ushort>
+	// System.Threading.Tasks.ContinuationResultTaskFromResultTask<object,object>
 	// System.Threading.Tasks.ContinuationTaskFromResultTask<System.Threading.Tasks.VoidTaskResult>
 	// System.Threading.Tasks.ContinuationTaskFromResultTask<UnityEngine.Localization.Settings.LocalizedDatabase.TableEntryResult<object,object>>
 	// System.Threading.Tasks.ContinuationTaskFromResultTask<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>
@@ -447,6 +461,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// object DG.Tweening.TweenSettingsExtensions.SetUpdate<object>(object,DG.Tweening.UpdateType)
 		// bool DG.Tweening.Tweener.Setup<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.CircleOptions>(DG.Tweening.Core.TweenerCore<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.CircleOptions>,DG.Tweening.Core.DOGetter<UnityEngine.Vector2>,DG.Tweening.Core.DOSetter<UnityEngine.Vector2>,UnityEngine.Vector2,float,DG.Tweening.Plugins.Core.ABSTweenPlugin<UnityEngine.Vector2,UnityEngine.Vector2,DG.Tweening.Plugins.CircleOptions>)
 		// bool DG.Tweening.Tweener.Setup<UnityEngine.Vector3,object,DG.Tweening.Plugins.Options.PathOptions>(DG.Tweening.Core.TweenerCore<UnityEngine.Vector3,object,DG.Tweening.Plugins.Options.PathOptions>,DG.Tweening.Core.DOGetter<UnityEngine.Vector3>,DG.Tweening.Core.DOSetter<UnityEngine.Vector3>,object,float,DG.Tweening.Plugins.Core.ABSTweenPlugin<UnityEngine.Vector3,object,DG.Tweening.Plugins.Options.PathOptions>)
+		// Grpc.Core.Marshaller<object> Grpc.Core.Marshallers.Create<object>(System.Action<object,Grpc.Core.SerializationContext>,System.Func<Grpc.Core.DeserializationContext,object>)
 		// object Newtonsoft.Json.JsonConvert.DeserializeObject<object>(string)
 		// object Newtonsoft.Json.JsonConvert.DeserializeObject<object>(string,Newtonsoft.Json.JsonSerializerSettings)
 		// object System.Activator.CreateInstance<object>()
@@ -456,6 +471,8 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LocalizationMgr.<Init>d__1>(System.Runtime.CompilerServices.TaskAwaiter&,LocalizationMgr.<Init>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>,SceneMgr.<UnloadScene>d__15>(System.Runtime.CompilerServices.TaskAwaiter<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>&,SceneMgr.<UnloadScene>d__15&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,LocalizationMgr.<Init>d__1>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,LocalizationMgr.<Init>d__1&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,LoginMgr.<<GoogleLogin>b__1_2>d>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,LoginMgr.<<GoogleLogin>b__1_2>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<int>,FirebaseMgr.<Init>d__3>(System.Runtime.CompilerServices.TaskAwaiter<int>&,FirebaseMgr.<Init>d__3&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,AudioMgr.<Init>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,AudioMgr.<Init>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,HotUpdateMgr.<LoadHotUpdateDLL>d__18>(System.Runtime.CompilerServices.TaskAwaiter<object>&,HotUpdateMgr.<LoadHotUpdateDLL>d__18&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,LocalizationMgr.<Init>d__1>(System.Runtime.CompilerServices.TaskAwaiter<object>&,LocalizationMgr.<Init>d__1&)
@@ -472,6 +489,8 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LocalizationMgr.<Init>d__1>(System.Runtime.CompilerServices.TaskAwaiter&,LocalizationMgr.<Init>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>,SceneMgr.<UnloadScene>d__15>(System.Runtime.CompilerServices.TaskAwaiter<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance>&,SceneMgr.<UnloadScene>d__15&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,LocalizationMgr.<Init>d__1>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,LocalizationMgr.<Init>d__1&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<byte>,LoginMgr.<<GoogleLogin>b__1_2>d>(System.Runtime.CompilerServices.TaskAwaiter<byte>&,LoginMgr.<<GoogleLogin>b__1_2>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<int>,FirebaseMgr.<Init>d__3>(System.Runtime.CompilerServices.TaskAwaiter<int>&,FirebaseMgr.<Init>d__3&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,AudioMgr.<Init>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,AudioMgr.<Init>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,HotUpdateMgr.<LoadHotUpdateDLL>d__18>(System.Runtime.CompilerServices.TaskAwaiter<object>&,HotUpdateMgr.<LoadHotUpdateDLL>d__18&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,LocalizationMgr.<Init>d__1>(System.Runtime.CompilerServices.TaskAwaiter<object>&,LocalizationMgr.<Init>d__1&)
@@ -485,6 +504,7 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter,HotUpdateMgr.<PreloadAssets>d__16>(System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter&,HotUpdateMgr.<PreloadAssets>d__16&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter,HotUpdateMgr.<PreloadAssetsAndToRam>d__15>(System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter&,HotUpdateMgr.<PreloadAssetsAndToRam>d__15&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<System.Threading.Tasks.VoidTaskResult>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter,SceneMgr.<LoadScene>d__12>(System.Runtime.CompilerServices.YieldAwaitable.YieldAwaiter&,SceneMgr.<LoadScene>d__12&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,FirebaseMgr.<IsUserExistsAsync>d__19>(System.Runtime.CompilerServices.TaskAwaiter<object>&,FirebaseMgr.<IsUserExistsAsync>d__19&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,LocalizationMgr.<LoadStringTableAsync>d__2>(System.Runtime.CompilerServices.TaskAwaiter<object>&,LocalizationMgr.<LoadStringTableAsync>d__2&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<long>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<long>,HotUpdateMgr.<CheckDownloadSize>d__14>(System.Runtime.CompilerServices.TaskAwaiter<long>&,HotUpdateMgr.<CheckDownloadSize>d__14&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,AudioMgr.<GetKeysByLabel>d__12>(System.Runtime.CompilerServices.TaskAwaiter<object>&,AudioMgr.<GetKeysByLabel>d__12&)
@@ -503,13 +523,16 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<DG.Tweening.DOTweenModuleUnityVersion.<AsyncWaitForPosition>d__14>(DG.Tweening.DOTweenModuleUnityVersion.<AsyncWaitForPosition>d__14&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<DG.Tweening.DOTweenModuleUnityVersion.<AsyncWaitForRewind>d__11>(DG.Tweening.DOTweenModuleUnityVersion.<AsyncWaitForRewind>d__11&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<DG.Tweening.DOTweenModuleUnityVersion.<AsyncWaitForStart>d__15>(DG.Tweening.DOTweenModuleUnityVersion.<AsyncWaitForStart>d__15&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<FirebaseMgr.<Init>d__3>(FirebaseMgr.<Init>d__3&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<HotUpdateMgr.<LoadHotUpdateDLL>d__18>(HotUpdateMgr.<LoadHotUpdateDLL>d__18&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<HotUpdateMgr.<PreloadAssets>d__16>(HotUpdateMgr.<PreloadAssets>d__16&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<HotUpdateMgr.<PreloadAssetsAndToRam>d__15>(HotUpdateMgr.<PreloadAssetsAndToRam>d__15&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<LocalizationMgr.<Init>d__1>(LocalizationMgr.<Init>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<LocalizationMgr.<SetLanguageAsync>d__9>(LocalizationMgr.<SetLanguageAsync>d__9&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<LoginMgr.<<GoogleLogin>b__1_2>d>(LoginMgr.<<GoogleLogin>b__1_2>d&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<SceneMgr.<LoadScene>d__12>(SceneMgr.<LoadScene>d__12&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder.Start<SceneMgr.<UnloadScene>d__15>(SceneMgr.<UnloadScene>d__15&)
+		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.Start<FirebaseMgr.<IsUserExistsAsync>d__19>(FirebaseMgr.<IsUserExistsAsync>d__19&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<byte>.Start<LocalizationMgr.<LoadStringTableAsync>d__2>(LocalizationMgr.<LoadStringTableAsync>d__2&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<long>.Start<HotUpdateMgr.<CheckDownloadSize>d__14>(HotUpdateMgr.<CheckDownloadSize>d__14&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<AudioMgr.<GetKeysByLabel>d__12>(AudioMgr.<GetKeysByLabel>d__12&)
@@ -521,48 +544,58 @@ public class AOTGenericReferences : UnityEngine.MonoBehaviour
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<ResMgr.<GetInstanceAsync>d__0>(ResMgr.<GetInstanceAsync>d__0&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<ResMgr.<GetResAsync>d__1<object>>(ResMgr.<GetResAsync>d__1<object>&)
 		// System.Void System.Runtime.CompilerServices.AsyncTaskMethodBuilder<object>.Start<ResMgr.<GetSpriteAsync>d__3>(ResMgr.<GetSpriteAsync>d__3&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,AccountLoginPopupView.<>c.<<OnLoginClick>b__5_2>d>(System.Runtime.CompilerServices.TaskAwaiter&,AccountLoginPopupView.<>c.<<OnLoginClick>b__5_2>d&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,AccountLoginPopupView.<>c.<<OnRegisterClick>b__6_2>d>(System.Runtime.CompilerServices.TaskAwaiter&,AccountLoginPopupView.<>c.<<OnRegisterClick>b__6_2>d&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,FirebaseMgr.<Logout>d__9>(System.Runtime.CompilerServices.TaskAwaiter&,FirebaseMgr.<Logout>d__9&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,Game1View.<OnSettingClick>d__3>(System.Runtime.CompilerServices.TaskAwaiter&,Game1View.<OnSettingClick>d__3&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,Game2View.<OnSettingClick>d__5>(System.Runtime.CompilerServices.TaskAwaiter&,Game2View.<OnSettingClick>d__5&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,GameMgr.<Init>d__1>(System.Runtime.CompilerServices.TaskAwaiter&,GameMgr.<Init>d__1&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,GrpcTest.<Start>d__1>(System.Runtime.CompilerServices.TaskAwaiter&,GrpcTest.<Start>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LanguagePopupView.<SwitchLanguage>d__5>(System.Runtime.CompilerServices.TaskAwaiter&,LanguagePopupView.<SwitchLanguage>d__5&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LoadingView.<Start>d__4>(System.Runtime.CompilerServices.TaskAwaiter&,LoadingView.<Start>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LobbyView.<OnEnterGame1Click>d__15>(System.Runtime.CompilerServices.TaskAwaiter&,LobbyView.<OnEnterGame1Click>d__15&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LoginView.<>c.<<OnGuestLoginClick>b__6_2>d>(System.Runtime.CompilerServices.TaskAwaiter&,LoginView.<>c.<<OnGuestLoginClick>b__6_2>d&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LoginView.<>c.<<Start>b__5_1>d>(System.Runtime.CompilerServices.TaskAwaiter&,LoginView.<>c.<<Start>b__5_1>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LoginMgr.<>c.<<AccountLogin>b__3_2>d>(System.Runtime.CompilerServices.TaskAwaiter&,LoginMgr.<>c.<<AccountLogin>b__3_2>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LoginMgr.<>c.<<AccountRegister>b__4_2>d>(System.Runtime.CompilerServices.TaskAwaiter&,LoginMgr.<>c.<<AccountRegister>b__4_2>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LoginMgr.<>c.<<AutoLogin>b__6_1>d>(System.Runtime.CompilerServices.TaskAwaiter&,LoginMgr.<>c.<<AutoLogin>b__6_1>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LoginMgr.<>c.<<GoogleLogin>b__1_3>d>(System.Runtime.CompilerServices.TaskAwaiter&,LoginMgr.<>c.<<GoogleLogin>b__1_3>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LoginMgr.<>c.<<GoogleLogin>b__1_5>d>(System.Runtime.CompilerServices.TaskAwaiter&,LoginMgr.<>c.<<GoogleLogin>b__1_5>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,LoginMgr.<>c.<<GuestLogin>b__2_2>d>(System.Runtime.CompilerServices.TaskAwaiter&,LoginMgr.<>c.<<GuestLogin>b__2_2>d&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter,SlotMgr.<StartSpin>d__7>(System.Runtime.CompilerServices.TaskAwaiter&,SlotMgr.<StartSpin>d__7&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<long>,LoadingView.<Start>d__4>(System.Runtime.CompilerServices.TaskAwaiter<long>&,LoadingView.<Start>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,AudioMgr.<LoadAudioClip>d__11>(System.Runtime.CompilerServices.TaskAwaiter<object>&,AudioMgr.<LoadAudioClip>d__11&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,Avatar.<Start>d__5>(System.Runtime.CompilerServices.TaskAwaiter<object>&,Avatar.<Start>d__5&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,GrpcClient.<SayHello>d__3>(System.Runtime.CompilerServices.TaskAwaiter<object>&,GrpcClient.<SayHello>d__3&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,LoadingView.<Start>d__4>(System.Runtime.CompilerServices.TaskAwaiter<object>&,LoadingView.<Start>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,LobbyView.<OnAvatarClickAsync>d__11>(System.Runtime.CompilerServices.TaskAwaiter<object>&,LobbyView.<OnAvatarClickAsync>d__11&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,LobbyView.<OnSettingClick>d__12>(System.Runtime.CompilerServices.TaskAwaiter<object>&,LobbyView.<OnSettingClick>d__12&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,LoginView.<OnAccountLoginClick>d__7>(System.Runtime.CompilerServices.TaskAwaiter<object>&,LoginView.<OnAccountLoginClick>d__7&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,OpenPopupBtn.<OnOpenPopup>d__3>(System.Runtime.CompilerServices.TaskAwaiter<object>&,OpenPopupBtn.<OnOpenPopup>d__3&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted<System.Runtime.CompilerServices.TaskAwaiter<object>,SettingPopupView.<OnLanguageClick>d__10>(System.Runtime.CompilerServices.TaskAwaiter<object>&,SettingPopupView.<OnLanguageClick>d__10&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<AccountLoginPopupView.<>c.<<OnLoginClick>b__5_2>d>(AccountLoginPopupView.<>c.<<OnLoginClick>b__5_2>d&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<AccountLoginPopupView.<>c.<<OnRegisterClick>b__6_2>d>(AccountLoginPopupView.<>c.<<OnRegisterClick>b__6_2>d&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<AudioMgr.<LoadAudioClip>d__11>(AudioMgr.<LoadAudioClip>d__11&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<Avatar.<Start>d__5>(Avatar.<Start>d__5&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<FirebaseMgr.<Logout>d__9>(FirebaseMgr.<Logout>d__9&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<Game1View.<OnSettingClick>d__3>(Game1View.<OnSettingClick>d__3&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<Game2View.<OnSettingClick>d__5>(Game2View.<OnSettingClick>d__5&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<GameMgr.<Init>d__1>(GameMgr.<Init>d__1&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<GrpcClient.<SayHello>d__3>(GrpcClient.<SayHello>d__3&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<GrpcTest.<Start>d__1>(GrpcTest.<Start>d__1&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LanguagePopupView.<SwitchLanguage>d__5>(LanguagePopupView.<SwitchLanguage>d__5&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LoadingView.<Start>d__4>(LoadingView.<Start>d__4&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LobbyView.<OnAvatarClickAsync>d__11>(LobbyView.<OnAvatarClickAsync>d__11&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LobbyView.<OnEnterGame1Click>d__15>(LobbyView.<OnEnterGame1Click>d__15&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LobbyView.<OnSettingClick>d__12>(LobbyView.<OnSettingClick>d__12&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LoginView.<>c.<<OnGuestLoginClick>b__6_2>d>(LoginView.<>c.<<OnGuestLoginClick>b__6_2>d&)
-		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LoginView.<>c.<<Start>b__5_1>d>(LoginView.<>c.<<Start>b__5_1>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LoginMgr.<>c.<<AccountLogin>b__3_2>d>(LoginMgr.<>c.<<AccountLogin>b__3_2>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LoginMgr.<>c.<<AccountRegister>b__4_2>d>(LoginMgr.<>c.<<AccountRegister>b__4_2>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LoginMgr.<>c.<<AutoLogin>b__6_1>d>(LoginMgr.<>c.<<AutoLogin>b__6_1>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LoginMgr.<>c.<<GoogleLogin>b__1_3>d>(LoginMgr.<>c.<<GoogleLogin>b__1_3>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LoginMgr.<>c.<<GoogleLogin>b__1_5>d>(LoginMgr.<>c.<<GoogleLogin>b__1_5>d&)
+		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LoginMgr.<>c.<<GuestLogin>b__2_2>d>(LoginMgr.<>c.<<GuestLogin>b__2_2>d&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<LoginView.<OnAccountLoginClick>d__7>(LoginView.<OnAccountLoginClick>d__7&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<OpenPopupBtn.<OnOpenPopup>d__3>(OpenPopupBtn.<OnOpenPopup>d__3&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<SettingPopupView.<OnLanguageClick>d__10>(SettingPopupView.<OnLanguageClick>d__10&)
 		// System.Void System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start<SlotMgr.<StartSpin>d__7>(SlotMgr.<StartSpin>d__7&)
 		// object& System.Runtime.CompilerServices.Unsafe.As<object,object>(object&)
 		// System.Void* System.Runtime.CompilerServices.Unsafe.AsPointer<object>(object&)
+		// System.Threading.Tasks.Task<object> System.Threading.Tasks.Task<object>.ContinueWith<object>(System.Func<System.Threading.Tasks.Task<object>,object>)
+		// System.Threading.Tasks.Task<object> System.Threading.Tasks.Task<object>.ContinueWith<object>(System.Func<System.Threading.Tasks.Task<object>,object>,System.Threading.Tasks.TaskScheduler,System.Threading.CancellationToken,System.Threading.Tasks.TaskContinuationOptions)
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object> UnityEngine.AddressableAssets.Addressables.LoadAssetAsync<object>(object)
 		// UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<System.Collections.Generic.IList<object>> UnityEngine.AddressableAssets.Addressables.LoadAssetsAsync<object>(string,System.Action<object>)
 		// System.Void UnityEngine.AddressableAssets.Addressables.Release<object>(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle<object>)
